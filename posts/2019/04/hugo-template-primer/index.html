@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,7 +11,7 @@
 This document is a brief primer on using Go templates." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://www.yalavuz.de/posts/2019/04/hugo-template-primer/" />
+<link rel="canonical" href="https://yalavuz.de/posts/2019/04/hugo-template-primer/" />
 
 
 <title>
@@ -27,16 +27,16 @@ This document is a brief primer on using Go templates." />
 
 
 
-<link rel="stylesheet" href="https://www.yalavuz.de/main.min.0d47b4686e972122bd29f0c1e3dd024a2d541cd8b1b543622520822ea6f4238a.css">
+<link rel="stylesheet" href="https://yalavuz.de/main.min.0d47b4686e972122bd29f0c1e3dd024a2d541cd8b1b543622520822ea6f4238a.css">
 
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="https://www.yalavuz.de/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.yalavuz.de/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.yalavuz.de/favicon-16x16.png">
-<link rel="manifest" href="https://www.yalavuz.de/site.webmanifest">
-<link rel="mask-icon" href="https://www.yalavuz.de/safari-pinned-tab.svg" color="#252627">
-<link rel="shortcut icon" href="https://www.yalavuz.de/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="https://yalavuz.de/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://yalavuz.de/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://yalavuz.de/favicon-16x16.png">
+<link rel="manifest" href="https://yalavuz.de/site.webmanifest">
+<link rel="mask-icon" href="https://yalavuz.de/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="https://yalavuz.de/favicon.ico">
 <meta name="theme-color" content="#252627"><meta itemprop="name" content="(Hu)go Template Primer">
 <meta itemprop="description" content="Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
 This document is a brief primer on using Go templates.">
@@ -50,7 +50,7 @@ This document is a brief primer on using Go templates.">
 
 <meta itemprop="keywords" content="go,golang,templates,themes,development," />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.yalavuz.de"/>
+<meta name="twitter:image" content="https://yalavuz.de"/>
 
 <meta name="twitter:title" content="(Hu)go Template Primer"/>
 <meta name="twitter:description" content="Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
@@ -75,7 +75,7 @@ This document is a brief primer on using Go templates."/>
         <div class="container">
             <header class="header">
     <span class="header__inner">
-        <a href="https://www.yalavuz.de/" style="text-decoration: none;">
+        <a href="https://yalavuz.de/" style="text-decoration: none;">
     <div class="logo">
         
             <span class="logo__mark">></span>
@@ -89,7 +89,7 @@ This document is a brief primer on using Go templates."/>
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://www.yalavuz.de/about/">About</a></li><li><a href="https://www.yalavuz.de/posts/">Posts</a></li>
+    <ul class="menu__inner"><li><a href="https://yalavuz.de/about/">About</a></li><li><a href="https://yalavuz.de/posts/">Posts</a></li>
     </ul>
 </nav>
 
@@ -125,7 +125,7 @@ This document is a brief primer on using Go templates."/>
         </div>
 
         <article>
-            <h1 class="post-title"><a href="https://www.yalavuz.de/posts/2019/04/hugo-template-primer/">(Hu)go Template Primer</a></h1>
+            <h1 class="post-title"><a href="https://yalavuz.de/posts/2019/04/hugo-template-primer/">(Hu)go Template Primer</a></h1>
 
             
 
@@ -188,7 +188,7 @@ functions.</p>
 <p>Each Go template has a struct (object) made available to it. In hugo each
 template is passed either a page or a node struct depending on which type of
 page you are rendering. More details are available on the
-<a href="https://www.yalavuz.de/layout/variables">variables</a> page.</p>
+<a href="https://yalavuz.de/layout/variables">variables</a> page.</p>
 
 <p>A variable is accessed by referencing the variable name.</p>
 
@@ -205,7 +205,7 @@ page you are rendering. More details are available on the
 
 <p>Go template ship with a few functions which provide basic functionality. The Go
 template system also provides a mechanism for applications to extend the
-available functions with their own. <a href="https://www.yalavuz.de/layout/functions">Hugo template
+available functions with their own. <a href="https://yalavuz.de/layout/functions">Hugo template
 functions</a> provide some additional functionality we believe
 are useful for building websites. Functions are called by using their name
 followed by the required parameters separated by spaces. Template
@@ -393,7 +393,7 @@ you want to inside of your templates.</p>
 <h2 id="using-content-page-parameters">Using Content (page) Parameters</h2>
 
 <p>In each piece of content you can provide variables to be used by the
-templates. This happens in the <a href="https://www.yalavuz.de/content/front-matter">front matter</a>.</p>
+templates. This happens in the <a href="https://yalavuz.de/content/front-matter">front matter</a>.</p>
 
 <p>An example of this is used in this documentation site. Most of the pages
 benefit from having the table of contents provided. Sometimes the TOC just
@@ -472,7 +472,7 @@ so, such as in this example:</p>
 
         <div class="post-info">
                 <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://www.yalavuz.de/tags/go">go</a></span><span class="tag"><a href="https://www.yalavuz.de/tags/golang">golang</a></span><span class="tag"><a href="https://www.yalavuz.de/tags/templates">templates</a></span><span class="tag"><a href="https://www.yalavuz.de/tags/themes">themes</a></span><span class="tag"><a href="https://www.yalavuz.de/tags/development">development</a></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://yalavuz.de/tags/go">go</a></span><span class="tag"><a href="https://yalavuz.de/tags/golang">golang</a></span><span class="tag"><a href="https://yalavuz.de/tags/templates">templates</a></span><span class="tag"><a href="https://yalavuz.de/tags/themes">themes</a></span><span class="tag"><a href="https://yalavuz.de/tags/development">development</a></span>
                 </p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1487 Words</p>
@@ -490,7 +490,7 @@ so, such as in this example:</p>
                 <div class="pagination__buttons">
                     
                         <span class="button previous">
-                            <a href="https://www.yalavuz.de/posts/2019/03/migrate-to-hugo-from-jekyll/">
+                            <a href="https://yalavuz.de/posts/2019/03/migrate-to-hugo-from-jekyll/">
                                 <span class="button__icon">←</span>
                                 <span class="button__text">Migrate to Hugo from Jekyll</span>
                             </a>
@@ -499,7 +499,7 @@ so, such as in this example:</p>
 
                     
                         <span class="button next">
-                            <a href="https://www.yalavuz.de/posts/2019/04/getting-started-with-hugo/">
+                            <a href="https://yalavuz.de/posts/2019/04/getting-started-with-hugo/">
                                 <span class="button__text">Getting Started with Hugo</span>
                                 <span class="button__icon">→</span>
                             </a>
@@ -520,11 +520,11 @@ so, such as in this example:</p>
         <div class="footer__content">
             <span>&copy; 2019</span>
             
-                <span><a href="https://www.yalavuz.de">Ebubekir Yalavuz</a></span>
+                <span><a href="https://yalavuz.de">Ebubekir Yalavuz</a></span>
             
             <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
 
-	    <span><a href=https://www.yalavuz.de/Imprint/>Imprint</a></span>
+	    <span><a href=https://yalavuz.de/Imprint/>Imprint</a></span>
         </div>
     </div>
     <div class="footer__inner">
@@ -550,7 +550,7 @@ so, such as in this example:</p>
 
 
 
-<script type="text/javascript" src="https://www.yalavuz.de/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+<script type="text/javascript" src="https://yalavuz.de/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
 
 
 
